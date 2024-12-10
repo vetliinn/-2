@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Практична 2</title>
+  </head>
+  <body>
+    <form action="/submit" method="post">
+      <label for="name">Ім'я (макс. 20 символів):</label>
+      <input type="text" id="name" name="name" maxlength="20" required />
+      <br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br />
+
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" name="password" required />
+      <br />
+
+      <label for="age">Вік:</label>
+      <input type="number" id="age" name="age" />
+      <br />
+
+      <label>Стать:</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Чол</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Жін</label>
+      <input
+        type="radio"
+        id="unspecified"
+        name="gender"
+        value="unspecified"
+        checked
+      />
+      <label for="unspecified">Не вказано</label>
+      <br />
+
+      <label for="group">Група:</label>
+      <select id="group" name="group">
+        <option value="ШІД-21">ШІД-21</option>
+        <option value="ШІД-22">ШІД-22</option>
+        <option value="ШІД-23">ШІД-23</option>
+      </select>
+      <br />
+
+      <label for="bio">Біографія:</label>
+      <textarea id="bio" name="bio" rows="4" cols="50"></textarea>
+      <br />
+
+      <input type="checkbox" id="consent" name="consent" required />
+      <label for="consent">Згода на обробку даних</label>
+      <br />
+
+      <button type="submit">Зберегти</button>
+    </form>
+  </body>
+</html>
